@@ -50,7 +50,7 @@ python pretrain_resnet12.py --gpu 0 --dataset FC100 --exp pre-train --rand_aug -
 python pretrain_resnet12.py --gpu 0 --dataset CUB --exp pre-train --rand_aug --repeat_aug
 ```
 
-#### Fine-tune the model with SP
+#### Fine-tune the model with SPPO
 * miniImageNet
 
 ```
@@ -123,3 +123,6 @@ python train_resnet12_CAM_marginloss_sne.py --gpu 0 --dataset CUB --exp test --w
 miniImagnet:
 python train_resnet12_CAM_marginloss_sne.py --gpu 0 --dataset miniImageNet --exp test --way 15 --shot 5 --aug_support 10 --test --episodes 2 --sne sne --resume checkpoint/miniImageNet/resnet12/sppre72_marginloss_spcam/checkpoint_epoch_best.pth
 ```
+### Acknowledgements
+Our code is based on <a name="https://github.com/WentaoChen0813/SemanticPrompt">SP</a> . We thank the authors for releasing their code. If you use our model and code, please consider citing these works as well.
+
